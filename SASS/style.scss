@@ -328,6 +328,8 @@ align-items: center; /* Centra los elementos verticalmente \*/
 
 }
 
+
+
 .cafe {
 text-align: center; /* Centra el contenido dentro de cada celda */
 background-color: #432918; /* Fondo claro para destacar */
@@ -567,7 +569,7 @@ nav {
     }
 }
 
-/* MEDIA QUERIES ANIDADAS */
+/* MEDIA QUERIES añadidas */
 @media (max-width: 992px) {
     .contenedor-servicios {
         grid-template-columns: 1fr;
@@ -602,4 +604,21 @@ nav {
 
 .center-content {
     @include flex-center;
+}
+
+
+.grilla-cafes .cafe img {
+  animation: zoom-inout 2s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes zoom-inout {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(67, 41, 24, 0.10);
+  }
+  100% {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(67, 41, 24, 0.25);
+  }
 }

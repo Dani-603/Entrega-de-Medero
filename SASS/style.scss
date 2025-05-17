@@ -545,6 +545,10 @@ body.pagina-principal main h1 {
     margin: 20px 0;
 }
 
+.algun-selector {
+    @extend %card;
+}
+
 /* ANIDAMIENTO */
 nav {
     ul {

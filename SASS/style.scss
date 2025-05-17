@@ -610,19 +610,38 @@ nav {
     @include flex-center;
 }
 
-
 .grilla-cafes .cafe img {
-  animation: zoom-inout 2s ease-in-out infinite alternate;
+  transform: skewY(-4deg) translateY(-10px);
+  box-shadow: 0 8px 24px rgba(67, 41, 24, 0.25);
   cursor: pointer;
 }
 
-@keyframes zoom-inout {
+.logo {
+  animation: logo-rotate 4s ease-in-out infinite alternate;
+}
+
+@keyframes logo-rotate {
   0% {
-    transform: scale(1);
-    box-shadow: 0 4px 6px rgba(67, 41, 24, 0.10);
+    transform: rotate(-5deg);
   }
   100% {
-    transform: scale(1.08);
-    box-shadow: 0 8px 24px rgba(67, 41, 24, 0.25);
+    transform: rotate(5deg);
+  }
+}
+
+.imagen-banner,
+.imagen-banner-servicios,
+.imagen-banner-menu {
+  animation: banner-shrink 6s ease-in-out infinite alternate;
+  display: block;
+  width: 100%;
+}
+
+@keyframes banner-shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.96);
   }
 }

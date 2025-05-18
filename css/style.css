@@ -7,33 +7,27 @@ body {
   color: #333; /* Color del texto \*/
 }
 
-/* Header */
 header {
   background-color: #432918;
   color: #cbbba0;
-  padding: 25px 0; /* Espaciado interno \*/
+  padding: 25px 0;
   text-align: right;
 }
-
-/* Navegación */
-nav ul {
-  list-style: none; /* Elimina los puntos de la lista \*/
+header nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-
-nav ul li {
-  display: inline; /* Coloca los elementos en línea */
-  margin-right: 15px; /* Espaciado entre los elementos \*/
+header nav ul li {
+  display: inline;
+  margin-right: 15px;
 }
-
-nav ul li a {
-  color: #cbbba0; /* Color de los enlaces */
-  text-decoration: none; /* Elimina el subrayado \*/
+header nav ul li a {
+  color: #cbbba0;
+  text-decoration: none;
   font-weight: bold;
 }
-
-nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -153,7 +147,7 @@ body.pagina-principal main h1 {
   border-radius: 4px;
 }
 
-.newsletter-form button\:hover {
+.newsletter-form button:hover {
   background-color: #cbbba0;
   color: #432918;
   cursor: pointer;
@@ -479,25 +473,6 @@ body.pagina-principal main h1 {
   border-radius: 10px;
   padding: 15px;
   color: #cbbba0;
-}
-
-/* ANIDAMIENTO */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
-nav ul li a {
-  color: #cbbba0;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav ul li a:hover {
-  text-decoration: underline;
 }
 
 /* MEDIA QUERIES añadidas */

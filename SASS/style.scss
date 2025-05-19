@@ -90,28 +90,28 @@ body.pagina-principal main h1 {
 
 /* Frase también sobre la imagen */
 .frase {
-  display: inline-block; // Solo ocupa el ancho del contenido
-  max-width: 90vw;       // Opcional: evita que sea demasiado ancha en pantallas chicas
-  background: rgba(67, 41, 24, 0.75);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
-  color: #cbbba0;
-  padding: 30px 50px;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 160px;
-  margin-left: 30px;
-  position: relative;
-  z-index: 1;
+display: inline-block; // Solo ocupa el ancho del contenido
+max-width: 90vw;       // Opcional: evita que sea demasiado ancha en pantallas chicas
+background: rgba(67, 41, 24, 0.75);
+box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+color: #cbbba0;
+padding: 30px 50px;
+border-radius: 10px;
+font-size: 1.3rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 160px;
+margin-left: 30px;
+position: relative;
+z-index: 1;
 }
 
 .footer {
-  background-color: #432918;
-  padding: 10px 25px;
-  font-size: 15px;
-  color: #cbbba0;
+background-color: #432918;
+padding: 10px 25px;
+font-size: 15px;
+color: #cbbba0;
 
-  .footer-container {
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -119,41 +119,41 @@ body.pagina-principal main h1 {
     margin-top: 50px;
 
     .footer-section {
-      flex: 1;
-      min-width: 180px;
+    flex: 1;
+    min-width: 180px;
     }
-  }
+}
 
-  .footer-copy {
+.footer-copy {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #432918;
     padding-top: 10px;
     font-size: 0.9rem;
-  }
+}
 
-  .newsletter {
+    .newsletter {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: -110px;
 
     .hoja {
-      margin-right: 30px;
+    margin-right: 30px;
     }
 
     .newsletter-form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 
-      input {
+    input {
         padding: 5px;
         width: 200px;
-      }
+    }
 
-      button {
+        button {
         padding: 5px 10px;
         background-color: #432918;
         color: white;
@@ -161,20 +161,20 @@ body.pagina-principal main h1 {
         border-radius: 4px;
 
         &:hover {
-          background-color: #cbbba0;
-          color: #432918;
-          cursor: pointer;
+        background-color: #cbbba0;
+        color: #432918;
+        cursor: pointer;
         }
-      }
     }
-  }
+    }
+}
 
-  .redes {
+    .redes {
     a {
-      text-decoration: none;
-      color: #cbbba0;
+    text-decoration: none;
+    color: #cbbba0;
     }
-  }
+}
 }
 .newsletter-form button {
     padding: 5px 10px;

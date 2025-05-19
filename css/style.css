@@ -328,14 +328,6 @@ body.pagina-principal main h1 {
   align-items: center; /* Centra los elementos verticalmente */
 }
 
-.cafe {
-  text-align: center; /* Centra el contenido dentro de cada celda */
-  background-color: #432918; /* Fondo claro para destacar */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 15px; /* Espaciado interno */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar un pocoprofundidad */
-}
-
 .menu h2 {
   color: #cbbba0;
   font-size: 1.2rem;
@@ -488,11 +480,13 @@ body.pagina-principal main h1 {
 }
 /* MIXINS */
 /* EXTEND */
-.algun-selector {
+.cafe {
   background-color: #432918;
   border-radius: 10px;
   padding: 15px;
   color: #cbbba0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* MEDIA QUERIES añadidas */

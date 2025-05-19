@@ -90,17 +90,20 @@ body.pagina-principal main h1 {
 
 /* Frase también sobre la imagen */
 .frase {
-    position: relative;
-    z-index: 1;
-    color: #cbbba0;
-    padding: 50px;
-    border-radius: 10px;
-    font-size: 1.3rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top:160px;
-    margin-left: 30px;
+  display: inline-block; // Solo ocupa el ancho del contenido
+  max-width: 90vw;       // Opcional: evita que sea demasiado ancha en pantallas chicas
+  background: rgba(67, 41, 24, 0.75);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  color: #cbbba0;
+  padding: 30px 50px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 160px;
+  margin-left: 30px;
+  position: relative;
+  z-index: 1;
 }
-
 
 .footer {
   background-color: #432918;
@@ -282,8 +285,6 @@ body.pagina-principal main h1 {
     
 }
 
-
-
 .servicios h1 {
     text-align: center; /* Centra el texto horizontalmente */
     font-size: 2.5rem; /* Ajusta el tamaño del texto */
@@ -354,7 +355,7 @@ body.pagina-principal main h1 {
     padding: 20px; /* Espaciado interno */
     justify-items: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
-
+   
 }
 
 .cafe {
@@ -607,37 +608,37 @@ color: #cbbba0;
 }
 
 .grilla-cafes .cafe img {
-  transform: skewY(-4deg) translateY(-10px);
-  box-shadow: 0 8px 24px rgba(67, 41, 24, 0.25);
-  cursor: pointer;
+transform: skewY(-4deg) translateY(-10px);
+box-shadow: 0 8px 24px rgba(67, 41, 24, 0.25);
+cursor: pointer;
 }
 
 .logo {
-  animation: logo-rotate 4s ease-in-out infinite alternate;
+animation: logo-rotate 4s ease-in-out infinite alternate;
 }
 
 @keyframes logo-rotate {
-  0% {
+0% {
     transform: rotate(-5deg);
-  }
-  100% {
+}
+100% {
     transform: rotate(5deg);
-  }
+}
 }
 
 .imagen-banner,
 .imagen-banner-servicios,
 .imagen-banner-menu {
-  animation: banner-shrink 6s ease-in-out infinite alternate;
-  display: block;
-  width: 100%;
+animation: banner-shrink 6s ease-in-out infinite alternate;
+display: block;
+width: 100%;
 }
 
 @keyframes banner-shrink {
-  0% {
+0% {
     transform: scale(1);
-  }
-  100% {
+}
+100% {
     transform: scale(0.96);
-  }
+}
 }

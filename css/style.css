@@ -82,15 +82,19 @@ body.pagina-principal main h1 {
 
 /* Frase también sobre la imagen */
 .frase {
-  position: relative;
-  z-index: 1;
+  display: inline-block;
+  max-width: 90vw;
+  background: rgba(67, 41, 24, 0.75);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
   color: #cbbba0;
-  padding: 50px;
+  padding: 30px 50px;
   border-radius: 10px;
   font-size: 1.3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 160px;
   margin-left: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .footer {
@@ -388,7 +392,7 @@ body.pagina-principal main h1 {
   background-color: #2d1a0f;
 }
 
-/* --- RESPONSIVE --- */
+/*  RESPONSIVE  */
 /* Para tablets (hasta 992px) */
 @media (max-width: 992px) {
   /* Ajuste del logo */
